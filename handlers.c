@@ -119,7 +119,7 @@ int handle_precision(va_list args, const char *modifier, char *index)
 	if (*modifier != '.')
 		return (-1);
 
-	modifier = modifier + modifier;
+	modifier++;
 	(*index)++;
 
 	if ((*modifier <= '0' || *modifier > '9') &&
@@ -145,7 +145,7 @@ int handle_precision(va_list args, const char *modifier, char *index)
 
 		val *= 10;
 		val += (*modifier - '0');
-		modifier = modifier + modifier;
+		modifier++;
 	}
 
 	return (val);
