@@ -153,7 +153,7 @@ unsigned int convert_r(va_list args, buffer_t *output,
  * @prec: precision_modifier.
  * @len: lenth_modifier.
  * @output: buffer_t struct containing a character array.
- *
+ *@args: argument
  * Return: The number of bytes stored to the buffer.
  */
 unsigned int convert_R(va_list args, buffer_t *output,
